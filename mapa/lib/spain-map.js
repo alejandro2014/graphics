@@ -1,4 +1,20 @@
-function getProvinceColor() {
+var provincesInfo = [
+    { name: 'madrid', value: 34 },
+    { name: 'barcelona', value: 34 },
+    { name: 'cuenca', value: 34 }
+];
+
+function getColorFromNumber(provinceValue) {
+    return '#aa0000';
+}
+
+function getProvinceColor(provinceName) {
+    let province = provincesInfo.find(pr => pr.name == provinceName);
+
+    if (province != undefined) {
+        return getColorFromNumber(province.value);
+    }
+
     return '#eeeeee';
 }
 
@@ -21,7 +37,7 @@ function getProvinceColor() {
             var path = R.path(province.path).attr(attr);
 
             path.attr({
-                fill: getProvinceColor()
+                fill: getProvinceColor(province.name)
             });
         }
 
