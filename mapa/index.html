@@ -1,32 +1,22 @@
 <html>
-<head>
-    <title>Gráficos</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="lib/raphael-min.js"></script>
-    <script type="text/javascript" src="lib/spain-map-layout.js"></script>
-    <script type="text/javascript" src="lib/spain-map.js"></script>
-</head>
-<body>
-    <div id="map"></div>
-  <script type="text/javascript">
-    new SpainMap({
-      id: 'map',
-      width: 700,
-      height: 500,
-      fillColor: "#eeeeee",
-      strokeColor: "#aaaaaa",
-      strokeWidth: 0.7,
-      selectedColor: "#66bbdd",
-      animationDuration: 200,
-      /*onClick: function(province, event) {
-        alert("Has seleccionado " + province.name);
-      },
-      onMouseOver: function(province, event) {
-        console.log('Navigating through ' + province.name);
-    },*/
-      //onMouseOut: function(province, event) {
-      //  console.log('Leaving ' + province.name);
-      //}
-    });
-  </script>
-</body>
+    <head>
+        <title>Mapa de España</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="lib/raphael-min.js"></script>
+        <script type="text/javascript" src="lib/spain-map-layout.js"></script>
+        <script type="text/javascript" src="lib/spain-map.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script type="text/javascript">
+            new SpainMap({
+                id: 'map',
+                width: 700,
+                height: 500,
+                fillColor: "#eeeeee",
+                strokeColor: "#aaaaaa",
+                strokeWidth: 0.7
+            });
+        </script>
+    </body>
+</html>

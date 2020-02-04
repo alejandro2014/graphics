@@ -1,3 +1,7 @@
+function getProvinceColor() {
+    return '#eeeeee';
+}
+
 (function() {
     var spainMap = spainMapLayout;
 
@@ -16,9 +20,9 @@
 
             var path = R.path(province.path).attr(attr);
 
-            /*path.attr({
-                fill: '#dddddd'
-            });*/
+            path.attr({
+                fill: getProvinceColor()
+            });
         }
 
         mapBBox = { x: 151, y: 11, width: 417, height: 348 };
