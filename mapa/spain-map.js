@@ -1,20 +1,20 @@
 var provincesInfo = [
-    { name: 'madrid', value: 100 },
-    { name: 'barcelona', value: 90 },
+    { name: 'madrid', value: 160 },
+    { name: 'barcelona', value: 140 },
     { name: 'cuenca', value: 80 },
     { name: 'valladolid', value: 70 },
     { name: 'lugo', value: 40 },
-    { name: 'cadiz', value: 20 }
+    { name: 'cadiz', value: 10 }
 ];
 
 var tableOfColors = [
-    '#0000aa', '#00aa00', '#00aaaa', '#aa0000', '#aa00aa',
-    '#aaaa00', '#aaaaaa', '#000000', '#ffffff', '#aa4444'
+    '#FDC5BF', '#ED9793', '#DD6968', '#CD3B3D', '#BE0E12',
+    '#A70D10', '#900C0F', '#790C0E', '#620B0D', '#4C0B0C'
 ]
 
 function getColorFromNumber(provinceValue) {
     var position = provinceValue < 145 ? Math.floor(provinceValue / 16) : 9;
-    
+
     return tableOfColors[position];
 }
 
